@@ -1,0 +1,72 @@
+@charset "UTF-8";
+.container {
+  text-align: center;
+  margin-top: 40px;
+  position: relative;
+}
+.container header h1 {
+  font-size: 45px;
+  background-image: linear-gradient(red, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container header h3 {
+  font-size: 25px;
+}
+.container header button {
+  font-size: 15px;
+  padding: 10px 18px;
+  background-color: rgba(235, 14, 14, 0.912);
+}
+.container #time {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.container .game-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container .game-container .land {
+  position: relative;
+  margin: 2rem 0.5rem;
+  margin-top: 5rem;
+  height: 6rem;
+  width: 30%;
+  background-size: cover;
+}
+.container .game-container .land::after {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  content: "";
+  background: url("./img/toprak.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+.container .game-container .land .mole {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./img/köstebek.png");
+  width: 100%;
+  height: 5.5rem;
+  background-size: contain;
+  background-position: center;
+  transition: all 0.3s ease;
+  background-repeat: no-repeat;
+}
+.container .game-container .land .mole.chosen {
+  top: -3rem;
+}/*# sourceMappingURL=main.css.map */
